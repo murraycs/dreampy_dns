@@ -1,4 +1,4 @@
 secrets = {
     'key' : '',
-    'host1' : ''
+    'host' : ''
 }
