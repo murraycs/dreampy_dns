@@ -9,9 +9,9 @@
     """
 
 #Python version check
-import sysd
+import sys
 import syslog
-from secrets import secrets 
+from secrets import secrets
 if sys.version_info.major < 3:
     msg = 'Python 3 required. I refuse to run!'
     syslog.syslog(syslog.LOG_ERR, msg)
