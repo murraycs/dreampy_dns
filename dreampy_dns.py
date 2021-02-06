@@ -9,8 +9,9 @@
     """
 
 #Python version check
-import sys
+import sysd
 import syslog
+from secrets import secrets 
 if sys.version_info.major < 3:
     msg = 'Python 3 required. I refuse to run!'
     syslog.syslog(syslog.LOG_ERR, msg)
@@ -24,8 +25,8 @@ import logging
 #### example.com or sub.exmple.com
 ####
 
-API_Key = ""
-domain = ""
+API_Key = secrets["key"]
+domain = secrets["host"]
 #### Set the logging level.
 logging.basicConfig(level=logging.ERROR)
 # Set this to 1 or True or whatever if you want to update IPv6 record.
