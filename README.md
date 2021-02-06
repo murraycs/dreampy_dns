@@ -15,10 +15,13 @@ Python 3 with urllib. Should be installed by default, if not use your package ma
 ## Usage
 
 No arguments needed, everything is included in the script itself. Unfortunately, this means that if you want to update several domains you must use different copies of this script.
-Script requires API_key and domain variables to be filled in. API_Key is the
+Script requires API_key and domain variables to be filled in using a file "secrets.py". API_Key is the
 API Key you have created in Dreamhost's control panel (it must have permission
 for the DNS commands). domain is the DNS record to be updated, eg.
 myawesomedyndomain.example.com.
+
+Edit secrets.py and add your API key and domain.
+
 Script runs from CLI in the usual way, eg.:  
 `python3 /path/to/script/dreampy_dns.py`  
 or you can run it as it is (make sure you make it executable):  
